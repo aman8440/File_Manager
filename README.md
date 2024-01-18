@@ -24,60 +24,28 @@ Ensure you have the following installed on your system:
 
    ```bash
    git clone https://github.com/aman8440/File_Manager.git
-   
-Install dependencies:
+## Install dependencies:
+ Using npm install command in your terminal.
 
-bash
-Copy code
-npm install
-Configure environment variables:
+## Configure environment variables:
+ Create a .env file in the project root and add the following:
 
-Create a .env file in the project root and add the following:
+## Run the application:
+  Using npm start command in your terminal.
 
-env
-Copy code
-PORT=3000
-DB_CONNECTION_STRING=your-postgres-connection-string
-AWS_ACCESS_KEY_ID=your-aws-access-key-id
-AWS_SECRET_ACCESS_KEY=your-aws-secret-access-key
-AWS_REGION=your-aws-region
-S3_BUCKET_NAME=your-s3-bucket-name
-Set up the PostgreSQL database:
+## Access the application:
+  Visit http://localhost:4000 in your browser.
 
-Execute the SQL script located in db/init.sql to create the necessary tables.
+## Additional Notes
+  1. Ensure proper error handling and validation for all API endpoints.
+  2. Implement user authentication and authorization.
+  3. Structure the codebase into separate modules following best practices.
 
-Run the application:
-
-bash
-Copy code
-npm start
-Access the application:
-
-Visit http://localhost:4000 in your browser.
-
-API Endpoints
-User Management
-POST /api/register - Register a new user.
-POST /api/login - Log in with existing credentials.
-Folder Management
-POST /api/folders - Create a new folder.
-POST /api/folders/:folderId/subfolders - Create a subfolder inside an existing folder.
-File Management
-POST /api/files - Upload a file to a folder.
-PUT /api/files/:fileId - Rename a file.
-PUT /api/files/:fileId/move - Move a file to a different folder.
-DELETE /api/files/:fileId - Delete a file.
-Additional Notes
-Ensure proper error handling and validation for all API endpoints.
-Implement user authentication and authorization.
-Structure the codebase into separate modules following best practices.
-Bonus Features (Optional)
-Implement user roles and permissions.
-Provide API endpoints to share files or folders.
-Add a search feature for files and folders.
-Implement pagination and sorting for large collections.
-Contributing
-Feel free to contribute to the development of this project. Fork the repository and submit pull requests for improvements.
-
-License
+## Bonus Features (Optional)
+  1. Implement user roles and permissions.
+  2. Provide API endpoints to share files or folders.
+  3. Add a search feature for files and folders.
+  4. Implement pagination and sorting for large collections.
+ 
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
