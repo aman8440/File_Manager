@@ -1,0 +1,26 @@
+This is my Project Strcuture
+
+- /config
+  - aws-config.js
+  - db-config.js
+- /controllers
+  - UserController.js
+  - fold.js
+  - fileController.js
+- /middlewares
+  - auth.js
+- /models
+  - user.js
+  - folder.js
+  - file.js
+- /routes
+  - user.js
+  - folder.js
+  - fileRoutes.js
+- /utils
+  - s3.js
+- index.js
+- create_tables.sql
+- README.md
+- design_decisions.md
+- package.json
